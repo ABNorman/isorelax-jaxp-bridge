@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <pomVersion>3</pomVersion>
+  <currentVersion>1.0</currentVersion>
+  <groupId>org.iso_relax.verifier.jaxp.validation</groupId>
+  <artifactId>isorelax-jaxp-bridge</artifactId>
+  <name>ISO RELAX JARV API to JAXP 1.4 validation API bridge</name>
+  <package>org.iso_relax.verifier.jaxp</package>
+  <description>[TODO: explain what this workflow is about]</description>
+  
+  <organization>
+    <name>java.net</name>
+    <url>http://java.net/</url>
+    <logo>https://${maven.javanet.project}.dev.java.net/branding/images/header_jnet_new.jpg</logo>
+  </organization>
+  
+  <repository>
+    <connection>scm:cvs:pserver:guest@cvs.dev.java.net:/cvs:${maven.javanet.project}</connection>
+    <url>https://${maven.javanet.project}.dev.java.net/source/browse/${maven.javanet.project}</url>
+  </repository>
+
+  <issueTrackingUrl>https://${maven.javanet.project}.dev.java.net/servlets/ProjectIssues</issueTrackingUrl>
+
+  <mailingLists>
+    <mailingList>
+      <name>Announcement List</name>
+      <subscribe>announce-subscribe@${maven.javanet.project}.dev.java.net</subscribe>
+      <unsubscribe>announce-unsubscribe@${maven.javanet.project}.dev.java.net</unsubscribe>
+      <archive>https://${maven.javanet.project}.dev.java.net/servlets/SummarizeList?listName=announce</archive>
+    </mailingList>
+    <mailingList>
+      <name>Developer List</name>
+      <subscribe>dev-subscribe@${maven.javanet.project}.dev.java.net</subscribe>
+      <unsubscribe>dev-unsubscribe@${maven.javanet.project}.dev.java.net</unsubscribe>
+      <archive>https://${maven.javanet.project}.dev.java.net/servlets/SummarizeList?listName=dev</archive>
+    </mailingList>
+    <mailingList>
+      <name>Users List</name>
+      <subscribe>users-subscribe@${maven.javanet.project}.dev.java.net</subscribe>
+      <unsubscribe>users-unsubscribe@${maven.javanet.project}.dev.java.net</unsubscribe>
+      <archive>https://${maven.javanet.project}.dev.java.net/servlets/SummarizeList?listName=users</archive>
+    </mailingList>
+    <mailingList>
+      <name>Issues List</name>
+      <subscribe>issues-subscribe@${maven.javanet.project}.dev.java.net</subscribe>
+      <unsubscribe>issues-unsubscribe@${maven.javanet.project}.dev.java.net</unsubscribe>
+      <archive>https://${maven.javanet.project}.dev.java.net/servlets/SummarizeList?listName=issues</archive>
+    </mailingList>
+    <mailingList>
+      <name>CVS List</name>
+      <subscribe>cvs-subscribe@${maven.javanet.project}.dev.java.net</subscribe>
+      <unsubscribe>cvs-unsubscribe@${maven.javanet.project}.dev.java.net</unsubscribe>
+      <archive>https://${maven.javanet.project}.dev.java.net/servlets/SummarizeList?listName=cvs</archive>
+    </mailingList>
+  </mailingLists>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <includes>
+          <include>META-INF/**/*</include>
+        </includes>
+      </resource>
+    </resources>
+    <!-- <unitTestSourceDirectory>src/test</unitTestSourceDirectory> -->
+  </build>
+  
+  
+  <dependencies>
+    <dependency>
+      <id>isorelax</id>
+      <version>20030108</version> <!-- any version would do -->
+    </dependency>
+  </dependencies>
+</project>
